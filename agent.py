@@ -35,7 +35,7 @@ llm = ChatAnthropic(
     model="claude-haiku-4-5",
     temperature=0.7,
     anthropic_api_key=ANTHROPIC_API_KEY,
-    base_url="https://api.proxyapi.ru/anthropic",
+    #base_url="https://api.proxyapi.ru/anthropic",
     max_tokens=1000
 )
 
