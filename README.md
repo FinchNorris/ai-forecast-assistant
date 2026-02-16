@@ -7,21 +7,21 @@
 ## Структура проекта
 .
 ├── data/
-│ ├── sales.csv # Исторические данные по продажам
-│ ├── price.csv # Исторические данные по цене
-│ ├── trips.csv # Исторические данные по поездкам
-│ └── forecasts/ # Сохраненные прогнозы Prophet
-│ ├── prophet_forecast_sales.csv
-│ ├── prophet_forecast_price.csv
-│ └── prophet_forecast_trips.csv
+│   ├── sales.csv                  # Исторические данные по продажам
+│   ├── price.csv                  # Исторические данные по цене
+│   ├── trips.csv                  # Исторические данные по поездкам
+│   └── forecasts/                 # Сохраненные прогнозы Prophet
+│       ├── prophet_forecast_sales.csv
+│       ├── prophet_forecast_price.csv
+│       └── prophet_forecast_trips.csv
 ├── prompts/
-│ ├── classifier.txt # Промпт для классификации запросов
-│ ├── chat.txt # Промпт для светской беседы
-│ └── forecast_response.txt # Промпт для формирования ответа
-├── key.txt # ключ API
-├── requirements.txt # Зависимости проекта
-├── agent.py # Основной код агента (LangChain)
-└── forecast.py # Модель Prophet для прогнозирования
+│   ├── classifier.txt             # Промпт для классификации запросов
+│   ├── chat.txt                   # Промпт для светской беседы
+│   └── forecast_response.txt      # Промпт для формирования ответа
+├── key.txt                        # Ключ API
+├── requirements.txt               # Зависимости проекта
+├── agent.py                       # Основной код агента (LangChain)
+└── forecast.py                    # Модель Prophet для прогнозирования
 
 
 ## Содержимое и функционал
