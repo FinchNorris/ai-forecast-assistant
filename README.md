@@ -5,24 +5,23 @@
 Интеллектуальный ассистент на базе LangChain и Claude Haiku, который отвечает на вопросы о прогнозах и исторических данных по трем показателям: продажи (sales), цена (price) и поездки (trips). Агент использует Prophet для прогнозирования, поддерживает диалог с памятью и умеет отличать запросы о прошлом от запросов о будущем.
 
 ## Структура проекта
-.
-├── data/
-│   ├── sales.csv                  # Исторические данные по продажам
-│   ├── price.csv                  # Исторические данные по цене
-│   ├── trips.csv                  # Исторические данные по поездкам
-│   └── forecasts/                 # Сохраненные прогнозы Prophet
-│       ├── prophet_forecast_sales.csv
-│       ├── prophet_forecast_price.csv
-│       └── prophet_forecast_trips.csv
-├── prompts/
-│   ├── classifier.txt             # Промпт для классификации запросов
-│   ├── chat.txt                   # Промпт для светской беседы
-│   └── forecast_response.txt      # Промпт для формирования ответа
-├── key.txt                        # Ключ API
-├── requirements.txt               # Зависимости проекта
-├── agent.py                       # Основной код агента (LangChain)
-└── forecast.py                    # Модель Prophet для прогнозирования
 
+- `data/`
+  - `sales.csv` — исторические данные по продажам
+  - `price.csv` — исторические данные по цене
+  - `trips.csv` — исторические данные по поездкам
+  - `forecasts/` — сохранённые прогнозы Prophet
+    - `prophet_forecast_sales.csv`
+    - `prophet_forecast_price.csv`
+    - `prophet_forecast_trips.csv`
+- `prompts/`
+  - `classifier.txt` — промпт для классификации запросов
+  - `chat.txt` — промпт для светской беседы
+  - `forecast_response.txt` — промпт для формирования ответа
+- `key.txt` — ключ API  
+- `requirements.txt` — зависимости проекта  
+- `agent.py` — основной код агента (LangChain)  
+- `forecast.py` — модель Prophet для прогнозирования
 
 ## Содержимое и функционал
 
