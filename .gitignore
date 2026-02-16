@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+
+# Project specific - агент
+data/forecasts/
+data/*.csv
+data/data.xlsx
+!data/sales.csv
+!data/price.csv
+!data/trips.csv
+prompts/promt.txt
+src/
